@@ -1,0 +1,7 @@
+# Ajustes de O Observador.
+# A lista de serviços fica em catalogo.yaml (carga inicial) e no banco (edições feitas no app).
+intervalo_segundos: 60     # de quanto em quanto tempo verificar todos os serviços
+falhas_para_alerta: 3      # falhas seguidas até o serviço ser dado como indisponível
+limite_lento_ms: 3000      # acima disso a resposta é considerada instável
+simultaneas: 25            # quantas verificações rodam ao mesmo tempo
+porta: 8765

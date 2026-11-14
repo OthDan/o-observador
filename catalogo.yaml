@@ -1,0 +1,172 @@
+# Catálogo inicial de O Observador.
+# Cada item: [id, nome, empresa, domínio, página de status (opcional), sp (opcional)]
+# "sp" indica página de status no formato Atlassian Statuspage, lida automaticamente
+# (a leitura usa <página de status>/api/v2/summary.json). Sem "sp", a página é só um link.
+# Itens em formato de mapa aceitam também "nota" e "componentes" (lista "Nome|URL").
+# Este arquivo só ACRESCENTA serviços ausentes; edições feitas no app nunca são sobrescritas.
+
+Bancos e pagamentos:
+  - [nubank, Nubank, Nu Pagamentos, nubank.com.br]
+  - [itau, Itaú, Itaú Unibanco, itau.com.br]
+  - [bradesco, Bradesco, Banco Bradesco, banco.bradesco]
+  - [bb, Banco do Brasil, Banco do Brasil, bb.com.br]
+  - [caixa, Caixa, Caixa Econômica Federal, caixa.gov.br]
+  - [santander, Santander Brasil, Banco Santander, santander.com.br]
+  - [inter, Banco Inter, Banco Inter, inter.co]
+  - [c6bank, C6 Bank, C6 Bank, c6bank.com.br]
+  - {id: pix, nome: Pix, empresa: Banco Central do Brasil, dominio: bcb.gov.br, nota: "O Pix é um sistema de pagamentos, não um site. A verificação independente mede apenas o site do Banco Central e não diz nada sobre as transações."}
+  - [mercadopago, Mercado Pago, MercadoLibre, mercadopago.com.br]
+  - [paypal, PayPal, PayPal Holdings, paypal.com, "https://www.paypal-status.com"]
+  - [stripe, Stripe, Stripe Inc, stripe.com, "https://status.stripe.com"]
+
+Big Techs:
+  - {id: google, nome: Google, empresa: Alphabet, dominio: google.com, status_url: "https://www.google.com/appsstatus/dashboard/", componentes: ["Site|https://www.google.com", "Gmail|https://mail.google.com", "Drive|https://drive.google.com"]}
+  - [microsoft, Microsoft, Microsoft Corporation, microsoft.com]
+  - [apple, Apple, Apple Inc, apple.com, "https://www.apple.com/support/systemstatus/"]
+  - [amazon, Amazon, Amazon.com Inc, amazon.com]
+  - [meta, Meta, Meta Platforms, meta.com, "https://metastatus.com"]
+  - [adobe, Adobe, Adobe Inc, adobe.com, "https://status.adobe.com"]
+  - [oracle, Oracle, Oracle Corporation, oracle.com]
+  - [ibm, IBM, IBM Corporation, ibm.com]
+  - [samsung, Samsung, Samsung Electronics, samsung.com]
+
+Marketplaces:
+  - [mercadolivre, Mercado Livre, MercadoLibre, mercadolivre.com.br]
+  - [amazonbr, Amazon Brasil, Amazon.com Inc, amazon.com.br]
+  - [shopee, Shopee, Sea Limited, shopee.com.br]
+  - [magalu, Magazine Luiza, Magalu, magazineluiza.com.br]
+  - [americanas, Americanas, Americanas S.A., americanas.com.br]
+  - [casasbahia, Casas Bahia, Grupo Casas Bahia, casasbahia.com.br]
+  - [aliexpress, AliExpress, Alibaba Group, aliexpress.com]
+  - [shein, Shein, Shein, shein.com.br]
+  - [olx, OLX Brasil, OLX, olx.com.br]
+  - [kabum, KaBuM, Magalu, kabum.com.br]
+  - [ebay, eBay, eBay Inc, ebay.com]
+  - [shopify, Shopify, Shopify Inc, shopify.com, "https://www.shopifystatus.com", sp]
+
+Redes sociais:
+  - {id: whatsapp, nome: WhatsApp, empresa: Meta Platforms, dominio: whatsapp.com, componentes: ["Site|https://www.whatsapp.com", "WhatsApp Web|https://web.whatsapp.com"]}
+  - [instagram, Instagram, Meta Platforms, instagram.com]
+  - [facebook, Facebook, Meta Platforms, facebook.com]
+  - [threads, Threads, Meta Platforms, threads.net]
+  - [tiktok, TikTok, ByteDance, tiktok.com]
+  - [x, X (antigo Twitter), X Corp, x.com]
+  - [linkedin, LinkedIn, Microsoft Corporation, linkedin.com]
+  - [telegram, Telegram, Telegram Messenger, telegram.org]
+  - [discord, Discord, Discord Inc, discord.com, "https://discordstatus.com", sp]
+  - [reddit, Reddit, Reddit Inc, reddit.com, "https://www.redditstatus.com", sp]
+  - [snapchat, Snapchat, Snap Inc, snapchat.com]
+
+Produtividade:
+  - [office365, Microsoft 365, Microsoft Corporation, office.com, "https://status.cloud.microsoft"]
+  - [slack, Slack, Salesforce, slack.com, "https://slack-status.com"]
+  - [zoom, Zoom, Zoom Communications, zoom.us, "https://status.zoom.us", sp]
+  - [notion, Notion, Notion Labs, notion.so, "https://www.notion-status.com", sp]
+  - [trello, Trello, Atlassian, trello.com, "https://trello.status.atlassian.com", sp]
+  - [atlassian, Atlassian, Atlassian, atlassian.com, "https://status.atlassian.com", sp]
+  - [dropbox, Dropbox, Dropbox Inc, dropbox.com, "https://status.dropbox.com", sp]
+  - [canva, Canva, Canva Pty, canva.com, "https://www.canvastatus.com", sp]
+  - [figma, Figma, Figma Inc, figma.com, "https://status.figma.com", sp]
+
+Infraestrutura de internet:
+  - [cloudflare, Cloudflare, Cloudflare Inc, cloudflare.com, "https://www.cloudflarestatus.com", sp]
+  - [aws, AWS, Amazon Web Services, aws.amazon.com, "https://health.aws.amazon.com/health/status"]
+  - [azure, Microsoft Azure, Microsoft Corporation, azure.microsoft.com, "https://azure.status.microsoft"]
+  - [gcp, Google Cloud, Alphabet, cloud.google.com, "https://status.cloud.google.com"]
+  - [fastly, Fastly, Fastly Inc, fastly.com, "https://www.fastlystatus.com", sp]
+  - [akamai, Akamai, Akamai Technologies, akamai.com]
+  - [dnsgoogle, Google Public DNS, Alphabet, dns.google]
+  - [dns1111, Cloudflare 1.1.1.1, Cloudflare Inc, one.one.one.one]
+  - [registrobr, Registro.br, NIC.br, registro.br]
+  - [letsencrypt, Let's Encrypt, ISRG, letsencrypt.org, "https://letsencrypt.status.io"]
+
+Streaming:
+  - [netflix, Netflix, Netflix Inc, netflix.com, "https://help.netflix.com/pt/is-netflix-down"]
+  - [youtube, YouTube, Google, youtube.com]
+  - [spotify, Spotify, Spotify AB, spotify.com, "https://status.spotify.com"]
+  - [disney, Disney+, The Walt Disney Company, disneyplus.com]
+  - [max, Max, Warner Bros. Discovery, max.com]
+  - [primevideo, Prime Video, Amazon, primevideo.com]
+  - [globoplay, Globoplay, Globo, globoplay.globo.com]
+  - [twitch, Twitch, Amazon, twitch.tv, "https://status.twitch.tv", sp]
+  - [appletv, Apple TV+, Apple Inc, tv.apple.com]
+  - [vimeo, Vimeo, Vimeo Inc, vimeo.com, "https://www.vimeostatus.com", sp]
+
+Jogos:
+  - [steam, Steam, Valve, store.steampowered.com]
+  - [epic, Epic Games, Epic Games, epicgames.com, "https://status.epicgames.com", sp]
+  - [playstation, PlayStation Network, Sony Interactive Entertainment, playstation.com, "https://status.playstation.com"]
+  - [xbox, Xbox Live, Microsoft Corporation, xbox.com, "https://support.xbox.com/en-US/xbox-live-status"]
+  - [riot, Riot Games, Riot Games, riotgames.com, "https://status.riotgames.com"]
+  - [battlenet, Battle.net, Blizzard Entertainment, battle.net]
+  - [ea, EA, Electronic Arts, ea.com]
+  - [roblox, Roblox, Roblox Corporation, roblox.com, "https://status.roblox.com", sp]
+  - [minecraft, Minecraft, Mojang Studios, minecraft.net]
+
+Inteligência artificial:
+  - {id: openai, nome: OpenAI (API), empresa: OpenAI, dominio: openai.com, status_url: "https://status.openai.com", leitura: sp, componentes: ["Site|https://openai.com", "API|https://api.openai.com"]}
+  - [chatgpt, ChatGPT, OpenAI, chatgpt.com, "https://status.openai.com", sp]
+  - {id: anthropic, nome: Anthropic (API), empresa: Anthropic, dominio: anthropic.com, status_url: "https://status.claude.com", leitura: sp, componentes: ["Site|https://www.anthropic.com", "API|https://api.anthropic.com"]}
+  - [claude, Claude, Anthropic, claude.ai, "https://status.claude.com", sp]
+  - [gemini, Gemini, Google, gemini.google.com]
+  - [copilot, Copilot, Microsoft Corporation, copilot.microsoft.com]
+  - [perplexity, Perplexity, Perplexity AI, perplexity.ai, "https://status.perplexity.com"]
+  - [mistral, Mistral AI, Mistral AI, mistral.ai, "https://status.mistral.ai"]
+  - [huggingface, Hugging Face, Hugging Face Inc, huggingface.co, "https://status.huggingface.co"]
+  - [deepseek, DeepSeek, DeepSeek, deepseek.com, "https://status.deepseek.com"]
+  - [grok, Grok, xAI, grok.com]
+
+Governo:
+  - [govbr, Gov.br, Governo Federal, gov.br]
+  - [receita, Receita Federal, Ministério da Fazenda, receita.fazenda.gov.br]
+  - [inss, Meu INSS, INSS, meu.inss.gov.br]
+  - [serpro, Serpro, Serpro, serpro.gov.br]
+  - [tse, TSE, Justiça Eleitoral, tse.jus.br]
+  - [esocial, eSocial, Governo Federal, esocial.gov.br]
+  - [saude, Ministério da Saúde, Governo Federal, saude.gov.br]
+  - [anatel, Anatel, Anatel, anatel.gov.br]
+  - [transparencia, Portal da Transparência, CGU, portaldatransparencia.gov.br]
+
+Logística:
+  - [correios, Correios, Empresa Brasileira de Correios, correios.com.br]
+  - [jadlog, Jadlog, Jadlog, jadlog.com.br]
+  - [loggi, Loggi, Loggi, loggi.com]
+  - [melhorenvio, Melhor Envio, Melhor Envio, melhorenvio.com.br]
+  - [fedex, FedEx, FedEx Corporation, fedex.com]
+  - [ifood, iFood, iFood, ifood.com.br]
+  - [uber, Uber, Uber Technologies, uber.com]
+  - [app99, "99", DiDi, 99app.com]
+
+Segurança:
+  - [okta, Okta, Okta Inc, okta.com, "https://status.okta.com"]
+  - [auth0, Auth0, Okta Inc, auth0.com, "https://status.auth0.com"]
+  - [onepassword, 1Password, AgileBits, 1password.com, "https://status.1password.com", sp]
+  - [bitwarden, Bitwarden, Bitwarden Inc, bitwarden.com, "https://status.bitwarden.com", sp]
+  - [lastpass, LastPass, GoTo, lastpass.com]
+  - [proton, Proton, Proton AG, proton.me, "https://status.proton.me"]
+  - [nordvpn, NordVPN, Nord Security, nordvpn.com]
+  - [virustotal, VirusTotal, Google, virustotal.com]
+  - [duo, Duo Security, Cisco, duo.com, "https://status.duo.com", sp]
+
+Hospedagem:
+  - {id: github, nome: GitHub, empresa: Microsoft Corporation, dominio: github.com, status_url: "https://www.githubstatus.com", leitura: sp, componentes: ["Site|https://github.com", "API|https://api.github.com"]}
+  - [gitlab, GitLab, GitLab Inc, gitlab.com, "https://status.gitlab.com"]
+  - [npm, npm, GitHub, npmjs.com, "https://status.npmjs.org", sp]
+  - [pypi, PyPI, Python Software Foundation, pypi.org, "https://status.python.org", sp]
+  - [dockerhub, Docker Hub, Docker Inc, hub.docker.com, "https://www.dockerstatus.com", sp]
+  - [digitalocean, DigitalOcean, DigitalOcean, digitalocean.com, "https://status.digitalocean.com", sp]
+  - [vercel, Vercel, Vercel Inc, vercel.com, "https://www.vercel-status.com", sp]
+  - [netlify, Netlify, Netlify Inc, netlify.com, "https://www.netlifystatus.com", sp]
+  - [heroku, Heroku, Salesforce, heroku.com, "https://status.heroku.com"]
+  - [hostinger, Hostinger, Hostinger International, hostinger.com.br]
+  - [locaweb, Locaweb, Locaweb, locaweb.com.br]
+
+IoT:
+  - [tuya, Tuya Smart, Tuya Inc, tuya.com]
+  - [smartthings, SmartThings, Samsung Electronics, smartthings.com]
+  - [alexa, Alexa, Amazon, alexa.amazon.com]
+  - [googlehome, Google Home, Google, home.google.com]
+  - [hue, Philips Hue, Signify, philips-hue.com]
+  - [tplink, TP-Link Tapo, TP-Link, tp-link.com]
+  - [sonos, Sonos, Sonos Inc, sonos.com]
+  - [nabucasa, Home Assistant Cloud, Nabu Casa, nabucasa.com]
